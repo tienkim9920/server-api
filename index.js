@@ -11,7 +11,7 @@ var paypal = require('paypal-rest-sdk');
 
 const cors = require("cors");
 var upload = require('express-fileupload');
-const port = 8000
+const port = process.env.PORT || 3000;
 
 const ProductAPI = require('./API/Router/product.router')
 const UserAPI = require('./API/Router/user.router')
